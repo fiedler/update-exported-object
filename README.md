@@ -26,7 +26,7 @@ function doSomething() {
 const updateExportedObject = require("update-exported-object");
 
 const configSourceCode = fs.readFileSync(CONFIG_PATH, "utf8");
-const newSourceCode = updateExportedObject(fileContents, obj => {
+const newSourceCode = updateExportedObject(configSourceCode, obj => {
   obj.someList.push("three");
 });
 fs.writeFileSync(CONFIG_PATH, newSourceCode);
