@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`change type 1`] = `
+"
+  var thereIsSomethingBefore = true;
+
+  module.exports = {
+    anObject: {
+      oldProperty: 2  // there is a comment here
+    },
+    anArray: 1,
+    isSomething: true,
+    aFunc: callback
+  }
+
+  function callback() {
+
+  }
+"
+`;
+
+exports[`change type in array 1`] = `
+"
+  var thereIsSomethingBefore = true;
+
+  module.exports = {
+    anObject: {
+      oldProperty: 2  // there is a comment here
+    },
+    anArray: [
+      \\"hej\\"
+    ],
+    isSomething: true,
+    aFunc: callback
+  }
+
+  function callback() {
+
+  }
+"
+`;
+
+exports[`delete property from object 1`] = `
+"
+  var thereIsSomethingBefore = true;
+
+  module.exports = {
+    anObject: {},
+    anArray: [
+      { \\"hello\\": \\"world\\" }
+    ],
+    isSomething: true,
+    aFunc: callback
+  }
+
+  function callback() {
+
+  }
+"
+`;
+
+exports[`insert property in object 1`] = `
+"
+  var thereIsSomethingBefore = true;
+
+  module.exports = {
+    anObject: {
+      // there is a comment here
+      oldProperty: 2,
+
+      newProperty: 1
+    },
+
+    anArray: [
+      { \\"hello\\": \\"world\\" }
+    ],
+
+    isSomething: true,
+    aFunc: callback,
+    isNull: null
+  }
+
+  function callback() {
+
+  }
+"
+`;
+
+exports[`push to array 1`] = `
+"
+  var thereIsSomethingBefore = true;
+
+  module.exports = {
+    anObject: {
+      oldProperty: 2  // there is a comment here
+    },
+    anArray: [{ \\"hello\\": \\"world\\" }, \\"hello\\"],
+    isSomething: true,
+    aFunc: callback
+  }
+
+  function callback() {
+
+  }
+"
+`;
+
+exports[`set element from array 1`] = `
+"
+  var thereIsSomethingBefore = true;
+
+  module.exports = {
+    anObject: {
+      oldProperty: 2  // there is a comment here
+    },
+    anArray: [
+      { yes: \\"please\\" }
+    ],
+    isSomething: true,
+    aFunc: callback
+  }
+
+  function callback() {
+
+  }
+"
+`;
+
+exports[`splice from array 1`] = `
+"
+  var thereIsSomethingBefore = true;
+
+  module.exports = {
+    anObject: {
+      oldProperty: 2  // there is a comment here
+    },
+    anArray: [],
+    isSomething: true,
+    aFunc: callback
+  }
+
+  function callback() {
+
+  }
+"
+`;
+
+exports[`update property in object 1`] = `
+"
+  var thereIsSomethingBefore = true;
+
+  module.exports = {
+    anObject: {
+      oldProperty: 1  // there is a comment here
+    },
+    anArray: [
+      { \\"hello\\": \\"world\\" }
+    ],
+    isSomething: false,
+    aFunc: {
+      change: \\"type\\"
+    }
+  }
+
+  function callback() {
+
+  }
+"
+`;

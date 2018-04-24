@@ -1,0 +1,40 @@
+//@flow
+
+// AST types
+export type Literal = {
+  type: "Literal",
+  value: LiteralValue
+};
+export type Identifier = {
+  type: "Identifier",
+  name: string
+};
+export type ObjectExpression = {
+  type: "ObjectExpression",
+  properties: Array<Property>
+};
+export type Property = {
+  type: "Property",
+  key: Literal | Identifier,
+  value: Node
+};
+export type ArrayExpression = {
+  type: "ArrayExpression",
+  elements: Array<Node>
+};
+export type Expression = ObjectExpression | ArrayExpression;
+export type Node = Literal | Expression | Identifier;
+
+// JS types
+export type LiteralValue = string | boolean | number | null;
+export type ObjectValue = { [string]: Value };
+export type Value = LiteralValue | Array<Value> | ObjectValue | typeof Symbol;
+
+// Other types
+export type Builders = {
+  literal: (value: LiteralValue) => Literal,
+  property: (kind: "init", key: Literal | Identifier, value: Node) => Property,
+  objectExpression: (Array<Property>) => ObjectExpression,
+  arrayExpression: (Array<Node>) => ArrayExpression,
+  identifier: string => Identifier
+};

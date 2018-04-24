@@ -1,0 +1,10 @@
+// @flow
+
+type LiteralValue = string | boolean | number | null;
+type ObjectValue = { [string]: Value };
+type Value = LiteralValue | Array<Value> | ObjectValue | typeof Symbol;
+
+declare module.exports: <T>(
+  source: string,
+  updater: (T) => ?ObjectValue
+) => string;
