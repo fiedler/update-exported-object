@@ -6,9 +6,9 @@
   "source": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fiedler/update-exported-object.git"
+    "url": "git+https://github.com/kimfiedler/update-exported-object.git"
   },
-  "homepage": "https://github.com/fiedler/update-exported-object",
+  "homepage": "https://github.com/kimfiedler/update-exported-object",
   "author": "Kim Fiedler Vestergaard",
   "license": "MIT",
   "scripts": {
