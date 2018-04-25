@@ -52,8 +52,8 @@ Anything that is not covered by this rule will have the value `Symbol(unknown)` 
 
 ```js
 {
-  setting1: true,
-  someList: ["one", "two"],
-  onSomething: Symbol(unknown)
+  "setting1": true,
+  "someList": ["one", "two"],
+  "onSomething": Symbol(unknown)
 }
 ```

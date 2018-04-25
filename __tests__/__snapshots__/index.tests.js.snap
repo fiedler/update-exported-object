@@ -68,7 +68,7 @@ exports[`insert property in object 1`] = `
       // there is a comment here
       oldProperty: 2,
 
-      newProperty: 1
+      \\"newProperty\\": 1
     },
 
     anArray: [
@@ -77,7 +77,7 @@ exports[`insert property in object 1`] = `
 
     isSomething: true,
     aFunc: callback,
-    isNull: null
+    \\"isNull\\": null
   }
 
   function callback() {
@@ -114,7 +114,7 @@ exports[`set element from array 1`] = `
       oldProperty: 2  // there is a comment here
     },
     anArray: [
-      { yes: \\"please\\" }
+      { \\"yes\\": \\"please\\" }
     ],
     isSomething: true,
     aFunc: callback
@@ -158,7 +158,7 @@ exports[`update property in object 1`] = `
     ],
     isSomething: false,
     aFunc: {
-      change: \\"type\\"
+      \\"change\\": \\"type\\"
     }
   }
 

@@ -75,7 +75,7 @@ const literalToNode = b.literal;
 const objectToNode = (value: ObjectValue) => {
   return b.objectExpression(
     Object.keys(value).map(key =>
-      b.property("init", b.identifier(key), toNode(value[key]))
+      b.property("init", b.literal(key), toNode(value[key]))
     )
   );
 };
@@ -116,9 +116,7 @@ function updateNode(node: Node, source: Value) {
           property.value = toNode(value);
         }
       } else {
-        node.properties.push(
-          b.property("init", b.identifier(key), toNode(value))
-        );
+        node.properties.push(b.property("init", b.literal(key), toNode(value)));
       }
     }
 
