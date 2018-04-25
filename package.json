@@ -1,6 +1,6 @@
 {
   "name": "update-exported-object",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Update an object exported using module.exports",
   "main": "lib/index.js",
   "source": "src/index.js",
